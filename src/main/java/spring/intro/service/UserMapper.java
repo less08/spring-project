@@ -8,7 +8,6 @@ import spring.intro.model.User;
 public class UserMapper {
     public UserResponseDto createDtoFromUser(User user) {
         UserResponseDto dto = new UserResponseDto();
-        dto.setPassword(user.getPassword());
         dto.setEmail(user.getEmail());
         dto.setId(user.getId());
         return dto;

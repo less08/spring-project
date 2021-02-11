@@ -49,7 +49,7 @@ public class UserController {
         return userMapper.createDtoFromUser(user);
     }
 
-    @GetMapping("/")
+    @GetMapping
     List<UserResponseDto> getAll() {
         return userService.listUsers().stream()
             .map(userMapper::createDtoFromUser)
