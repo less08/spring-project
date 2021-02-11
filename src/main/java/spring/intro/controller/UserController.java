@@ -32,6 +32,12 @@ public class UserController {
         User alice = new User();
         alice.setEmail("alice@gmail.com");
         alice.setPassword("alicepass");
+        User john = new User();
+        john.setEmail("john@gmail.com");
+        john.setPassword("johnpass");
+        User dean = new User();
+        dean.setEmail("dean@gmail.com");
+        dean.setPassword("deanpass");
         userService.add(bob);
         userService.add(alice);
         return "All users were injected";
